@@ -1,0 +1,24 @@
+#Прайс:
+#Чай            - 50 рублей
+#Чай с лимоном  - 60 рублей
+#__________________________
+#Кофе           - 90 рублей
+#Кофе с молоком - 100 рублей
+additive_price = 0
+
+drink = input()
+if drink == 'чай':
+    additive_price += 50
+    additive = input()
+    if additive == 'да':
+        additive_price += 10
+    print('Итоговая цена:', additive_price)
+
+elif drink == 'кофе':
+    additive_price += 90
+    additive = input()
+    if additive == 'да':
+        additive_price += 10
+    print('Итоговая цена:', additive_price)
+else:
+     print('Извините, у нас есть только чай или кофе')
